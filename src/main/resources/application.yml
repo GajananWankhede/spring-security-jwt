@@ -1,0 +1,25 @@
+server:
+  port: 7195
+#  servlet:
+#    context-path: /med-jwt-service
+spring:
+  main:
+    allow-circular-references: true
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    password: Aai@2070
+    url: jdbc:mysql://localhost:3306/jwtschema
+    username: root
+
+  jpa:
+    generate-ddl: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL55Dialect
+    show-sql: true
+  profiles:
+    active: jdbc
+  security:
+    user:
+      name: root
+      password: Aai@2070
